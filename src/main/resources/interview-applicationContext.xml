@@ -18,7 +18,7 @@
 	
 	<bean id="PropertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="location" value="classpath:interview-config.properties" />
-		<property name="properties" value="#{Configuration.toProperties()}"/>
+		<property name="properties" value="${Configuration.toProperties()}"/>
 	</bean>
 	
 	<bean id="employeeDao" class="com.symphony.interview.dao.EmployeeDaoImpl">
