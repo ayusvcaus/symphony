@@ -109,4 +109,20 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		}
 		return false;
 	}
+	
+	public void setJdbcDriver(String jdbcDriver) {
+		this.jdbcDriver = jdbcDriver;
+	}
+	
+	public void setDbUrl(String dbUrl) {
+		this.dbUrl = dbUrl;
+	}
+	
+	public void setDbUser(String dbUser) {
+		this.dbUser = dbUser;
+	}
+	
+	public void setDbPassword(String dbPassword) {
+		this.dbPassword = dbPassword;
+	}
 }
